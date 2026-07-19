@@ -1,0 +1,206 @@
+.terminal-section {
+  background: rgba(10, 14, 23, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.terminal-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-top: -30px;
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+}
+
+.terminal-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--card-border);
+}
+
+.terminal-bar {
+  background: rgba(15, 23, 42, 0.9);
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.terminal-buttons .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.terminal-buttons .dot.red { background-color: #ef4444; }
+.terminal-buttons .dot.yellow { background-color: #f59e0b; }
+.terminal-buttons .dot.green { background-color: #10b981; }
+
+.terminal-tab {
+  margin-left: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.terminal-window {
+  background: rgba(10, 14, 23, 0.95);
+  padding: 24px;
+  min-height: 350px;
+  max-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.terminal-logs {
+  overflow-y: auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  text-align: left;
+  margin-bottom: 16px;
+  padding-right: 8px;
+}
+
+/* Custom Scrollbar for Terminal Logs */
+.terminal-logs::-webkit-scrollbar {
+  width: 6px;
+}
+.terminal-logs::-webkit-scrollbar-track {
+  background: transparent;
+}
+.terminal-logs::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+.terminal-logs::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+.log-line {
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+.input-line {
+  color: var(--text-primary);
+}
+
+.system-line {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.output-line {
+  color: #e2e8f0;
+}
+
+.output-indent-line {
+  color: #cbd5e1;
+  padding-left: 20px;
+}
+
+.output-accent-line {
+  color: var(--secondary-color);
+}
+
+.output-indent-accent-line {
+  color: var(--primary-color);
+  padding-left: 20px;
+}
+
+.error-line {
+  color: #f87171;
+}
+
+.terminal-input-row {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+.prompt {
+  color: var(--success-color);
+  margin-right: 10px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  flex-grow: 1;
+  caret-color: var(--primary-color);
+}
+
+/* Shortcut Buttons */
+.terminal-shortcuts {
+  max-width: 800px;
+  margin: 24px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.shortcut-btn {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  color: var(--text-secondary);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+}
+
+.shortcut-btn:hover {
+  background: rgba(139, 92, 246, 0.08);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--primary-glow);
+}
+
+.shortcut-btn.clear-btn:hover {
+  background: rgba(239, 68, 68, 0.08);
+  border-color: #ef4444;
+  color: #ef4444;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.15);
+}
+
+@media (max-width: 600px) {
+  .terminal-window {
+    min-height: 280px;
+    padding: 16px;
+  }
+  .terminal-logs {
+    font-size: 0.85rem;
+  }
+  .terminal-input-row {
+    font-size: 0.85rem;
+  }
+  .shortcut-btn {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+}
