@@ -68,7 +68,7 @@ export default function Hero() {
             <a href="https://github.com/ritiksalariya" target="_blank" rel="noopener noreferrer" title="GitHub">
               <i className="fa-brands fa-github"></i>
             </a>
-            <a href="https://linkedin.com/in/ritiksalariya" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/ritik-salariya-201155256/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
               <i className="fa-brands fa-linkedin"></i>
             </a>
             <a href="mailto:ritiksalariya@gmail.com" title="Email ritiksalariya@gmail.com">
@@ -91,19 +91,19 @@ export default function Hero() {
             <div className="terminal-body">
               <pre>
                 <code>
-<span className="keyword">const</span> developer = &#123;
-  name: <span className="string">'Ritik'</span>,
-  title: <span className="string">'Full Stack Developer'</span>,
-  skills: [
-    <span className="string">'React'</span>, <span className="string">'Node.js'</span>,
-    <span className="string">'PostgreSQL'</span>, <span className="string">'MongoDB'</span>
-  ],
-  passion: <span className="string">'Building scalable apps'</span>,
-  location: <span className="string">'Bangalore, India'</span>
-&#125;;
+                  <span className="keyword">const</span> developer = &#123;
+                  name: <span className="string">'Ritik'</span>,
+                  title: <span className="string">'Full Stack Developer'</span>,
+                  skills: [
+                  <span className="string">'React'</span>, <span className="string">'Node.js'</span>,
+                  <span className="string">'PostgreSQL'</span>, <span className="string">'MongoDB'</span>
+                  ],
+                  passion: <span className="string">'Building scalable apps'</span>,
+                  location: <span className="string">'Bangalore, India'</span>
+                  &#125;;
 
-<span className="comment">// Ready to collaborate!</span>
-console.log(developer.passion);
+                  <span className="comment">// Ready to collaborate!</span>
+                  console.log(developer.passion);
                 </code>
               </pre>
             </div>
