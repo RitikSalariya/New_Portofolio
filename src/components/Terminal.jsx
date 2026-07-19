@@ -185,7 +185,6 @@ export default function Terminal() {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder="type here..."
-                autoFocus
                 className="terminal-input"
               />
             </div>
