@@ -71,7 +71,7 @@ export default function Hero() {
             <a href="https://www.linkedin.com/in/ritik-salariya-201155256/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
               <i className="fa-brands fa-linkedin"></i>
             </a>
-            <a href="mailto:ritiksalariya@gmail.com" title="Email ritiksalariya@gmail.com">
+            <a href="#contact" title="Email ritiksalariya@gmail.com">
               <i className="fa-solid fa-envelope"></i>
             </a>
             <a href="tel:+919530743176" title="Call +91 9530743176">
